@@ -1,0 +1,72 @@
+.players {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.playground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./../../assets/playground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cardStack {
+    position: relative;
+
+    img {
+        position: absolute;
+        width: 100px;
+        height: auto;
+    }
+}
+
+.topCard {
+    right: 20px;
+    bottom: 20px;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+        right: 25px;
+        bottom: 25px;
+        cursor: pointer;
+    }
+}
+
+.takeCard {
+    right: 25px;
+    bottom: 25px;
+    animation: takeCardAnimation 2s ease-in-out;
+    transform: scale(1) translateX(-150px) translateY(250px);
+}
+
+@keyframes takeCardAnimation {
+    0% {
+        transform: scale(1.3);
+    }
+
+    33% {
+        transform: scale(1.7);
+    }
+
+    66% {
+        transform: scale(1.7);
+    }
+
+    100% {
+        transform: scale(1) translateX(-150px) translateY(250px);
+    }
+}
+
+.playedCard {
+    right: 25px;
+    bottom: 25px;
+    transform: scale(1) translateX(-150px) translateY(250px);
+}
