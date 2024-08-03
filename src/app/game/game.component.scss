@@ -2,7 +2,6 @@
     position: absolute;
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
 }
 
 .playground {
@@ -69,4 +68,10 @@
     right: 25px;
     bottom: 25px;
     transform: scale(1) translateX(-150px) translateY(250px);
+}
+
+.addBtn {
+    position: absolute;
+    top: 32px;
+    right: 32px;
 }

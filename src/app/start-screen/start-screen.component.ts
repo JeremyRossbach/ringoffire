@@ -13,6 +13,7 @@ export class StartScreenComponent {
 
   }
 
+  
   /**
    * starts new game
    */

@@ -17,7 +17,7 @@ export class Game {
 }
 
 
-function shuffle(array: any) {
+function shuffle(array: string[]) {
     let currentIndex = array.length;
   
     // While there remain elements to shuffle...
